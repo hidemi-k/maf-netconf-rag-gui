@@ -80,18 +80,22 @@ Network Device
 ## ⚙️ Quickstart
 
 ### 1. Clone the repository  
+```bash
 git clone https://github.com/hidemi-k/maf-netconf-rag-gui.git
 cd maf-netconf-rag-gui
-
+```
 ### 2. Install dependencies
+```bash
 pip install -r requirements.txt
-
+```
 ### 3. Prepare configuration
+```bash
 cp config.ini.example config.ini
-
+```
 ### 4. Run the NiceGUI app
+```bash
 python maf_netconf_rag_gui.py
-
+```
 ### 📁 Repository Structure
 ```
 maf-netconf-rag-gui/
