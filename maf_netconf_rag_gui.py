@@ -1242,7 +1242,7 @@ User Query (EN/JP)
         global query_input
         query_input = ui.textarea(
             label='e.g. "Add VLAN100 with ID 100, then delete SALES_VLAN"',
-            value="Add 'DEV_VLAN' with VLAN ID 200."
+            value="Add 'DEV_VLAN' with VLAN ID 50."
         ).props('outlined rows=3').classes('w-full')
 
         with ui.row().classes('gap-2 q-mt-sm'):
