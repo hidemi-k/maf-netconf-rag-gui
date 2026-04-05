@@ -1,0 +1,14 @@
+# UI Framework
+nicegui
+
+# AI / LLM / RAG
+agent-framework>=1.0.0
+langchain-community
+langchain-openai
+langchain-huggingface
+faiss-cpu
+openai
+sentence-transformers
+
+# Network Automation (Junos)
+junos-eznc

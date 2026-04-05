@@ -97,6 +97,7 @@ python maf_netconf_rag_gui.py
 maf-netconf-rag-gui/
  ├── maf_netconf_rag_gui.py      # Main NiceGUI + RAG + NETCONF app
  ├── config.ini.example          # Example configuration
+ ├── requirements.txt            # Python dependencies required for the UI, RAG engine, and NETCONF automation
  ├── LICENSE                     # MIT License
  ├── .gitignore                  # Includes faiss_db/ exclusion
  ├── faiss_db/ (ignored)         # Local vector store
