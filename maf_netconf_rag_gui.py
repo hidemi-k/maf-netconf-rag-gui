@@ -1173,6 +1173,9 @@ class OrchestratorAgent:
 # 6. NiceGUI UI
 # ─────────────────────────────────────────────────────────────────
 
+@ui.page('/')
+def index():
+    ui.navigate.to('/netconf_rag')
 @ui.page('/netconf_rag')
 def main_page():
     ui.page_title('MAF NETCONF RAG Agent')

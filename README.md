@@ -1,10 +1,10 @@
 # NETCONF RAG GUI Demo  
-Agentic RAG → NETCONF XML → Orchestrator‑Worker DAG execution with a NiceGUI frontend, powered by Microsoft Agent Framework (MAF) 1.0.0.
+Agentic RAG → NETCONF XML → Orchestrator‑Worker DAG execution with a NiceGUI frontend, powered by Microsoft Agent Framework (MAF) 1.1.0.
 
 ---
 
 ## 🚀 Overview  
-This project demonstrates an **Agentic RAG–driven network automation workflow** using the **Microsoft Agent Framework (MAF) 1.0.0**.  
+This project demonstrates an **Agentic RAG–driven network automation workflow** using the **Microsoft Agent Framework (MAF) 1.1.0**.  
 Natural‑language intent is converted into **NETCONF XML**, executed through a **two‑task DAG**, and visualized through a **NiceGUI web interface**.
 
 It is designed as a **minimal, reproducible demo** showing how AI‑assisted intent, NETCONF automation, and orchestrator‑worker patterns can be combined for modern network operations.
@@ -15,7 +15,7 @@ It is designed as a **minimal, reproducible demo** showing how AI‑assisted int
 
 https://github.com/user-attachments/assets/d058a8bd-f54a-428c-853e-14c2a3186989
 
-> **Demonstration: Multi-Task DAG Execution via MAF 1.0.0**
+> **Demonstration: Multi-Task DAG Execution via MAF 1.1.0**
 > Watch how a simple intent ("Delete VLAN 50 and add VLAN 100") is autonomously handled by MAF agents, with full visibility through NiceGUI and JupyterHub.
 
 - NiceGUI UI  
@@ -37,7 +37,7 @@ Demo workflow:
 - **Task 1:** Delete VLAN 50  
 - **Task 2:** Add VLAN 100  
 
-### 🔹 Orchestrator‑Worker DAG (MAF 1.0.0)  
+### 🔹 Orchestrator‑Worker DAG (MAF 1.1.0)  
 - Two‑task DAG executed by MAF  
 - Clear separation of orchestration and execution  
 - Ideal for multi‑step network workflows
@@ -96,6 +96,18 @@ cp config.ini.example config.ini
 ```bash
 python maf_netconf_rag_gui.py
 ```
+
+### 5. Open the UI
+
+Navigate to `http://localhost:8080` in your browser.  
+You will be automatically redirected to `http://localhost:8080/netconf_rag`.
+
+> **Note:** On startup, the following warning from the BERT model loader can be safely ignored:
+> ```
+> embeddings.position_ids | UNEXPECTED
+> ```
+> This is expected behavior when loading `BAAI/bge-large-en-v1.5` and does not affect functionality.
+
 ### 📁 Repository Structure
 ```
 maf-netconf-rag-gui/
@@ -111,7 +123,7 @@ maf-netconf-rag-gui/
 - Python 3.10+
 - NiceGUI
 - FAISS
-- Microsoft Agent Framework (MAF) 1.0.0
+- Microsoft Agent Framework (MAF) 1.1.0
 - NETCONF-capable network device
 - JupyterHub (optional)
 
