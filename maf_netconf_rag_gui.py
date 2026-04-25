@@ -1,5 +1,5 @@
 # Copyright (c) 2026 hidemi-k / Licensed under the MIT License
-# maf-netconf-rag-gui: NiceGUI frontend for NETCONF × Agentic RAG (MAF Phase 7)
+# maf-netconf-rag-gui: NiceGUI frontend for NETCONF × Agentic RAG
 #
 # Architecture: Orchestrator-Worker pattern
 #   Orchestrator → task_decomposer → dependency_resolver → Worker(s) → result_aggregator
