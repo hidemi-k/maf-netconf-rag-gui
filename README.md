@@ -13,7 +13,7 @@ It is designed as a **minimal, reproducible demo** showing how AI‑assisted int
 
 ## 🎥 Demo Video  (55 sec)  
 
-https://github.com/user-attachments/assets/d058a8bd-f54a-428c-853e-14c2a3186989
+[![Demo Video](https://img.youtube.com/vi/8NOBIRRuRcc/maxresdefault.jpg)](https://www.youtube.com/watch?v=8NOBIRRuRcc)
 
 > **Demonstration: Multi-Task DAG Execution via MAF 1.2.0**
 > Watch how a simple intent ("Delete VLAN 50 and add VLAN 100") is autonomously handled by MAF agents, with full visibility through NiceGUI and JupyterHub.
