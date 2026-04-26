@@ -11,7 +11,7 @@ It is designed as a **minimal, reproducible demo** showing how AI‑assisted int
 
 ---
 
-## 🎥 Demo Video  (55 sec)  
+## 🎥 Demo Video  (51 sec)  
 
 [![Demo Video](https://img.youtube.com/vi/8NOBIRRuRcc/maxresdefault.jpg)](https://www.youtube.com/watch?v=8NOBIRRuRcc)
 
