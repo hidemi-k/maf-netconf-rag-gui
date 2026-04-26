@@ -35,7 +35,7 @@ except ImportError:
 
 # Agent Framework (MAF)
 from agent_framework import Agent, Message
-from agent_framework.openai import OpenAIChatClient
+from agent_framework_openai import OpenAIChatCompletionClient
 
 from nicegui import ui
 
@@ -80,8 +80,8 @@ llm = ChatOpenAI(
     base_url=GROQ_BASE_URL,
 )
 
-def make_client(model_id: str = DEFAULT_MODEL) -> OpenAIChatClient:
-    return OpenAIChatClient(model=model_id, api_key=GROQ_API_KEY, base_url=GROQ_BASE_URL)
+def make_client(model_id: str = DEFAULT_MODEL) -> OpenAIChatCompletionClient:
+    return OpenAIChatCompletionClient(model=model_id, api_key=GROQ_API_KEY, base_url=GROQ_BASE_URL)
 
 # ─────────────────────────────────────────────────────────────────
 # 2. Skill Definitions
