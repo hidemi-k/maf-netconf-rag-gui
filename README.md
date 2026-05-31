@@ -123,7 +123,7 @@ maf-netconf-rag-gui/
 - Python 3.10+
 - NiceGUI
 - FAISS
-- Microsoft Agent Framework (MAF) 1.4.0
+- Microsoft Agent Framework (MAF) 1.7.0
 - NETCONF-capable network device
 - JupyterHub (optional)
 
