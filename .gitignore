@@ -6,13 +6,6 @@ __pycache__/
 # Jupyter audit logs (anywhere in the repo)
 audit_log.jsonl
 
-# Rust
-**/xdp-ebpf/target/
-**/xdp-ebpf/Cargo.lock
-
-# Go
-**/go-control-plane/go.sum
-
 # App Config (never commit real keys)
 config.ini
 

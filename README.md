@@ -116,14 +116,13 @@ maf-netconf-rag-gui/
  ├── requirements.txt            # Python dependencies required for the UI, RAG engine, and NETCONF automation
  ├── LICENSE                     # MIT License
  ├── .gitignore                  # Includes faiss_db/ exclusion
- ├── faiss_db/ (ignored)         # Local vector store
- └── .ipynb_checkpoints/         # Jupyter artifacts
+ └── faiss_db/ (ignored)         # Local vector store
 ```
 ### 🧩 Requirements
 - Python 3.10+
 - NiceGUI
 - FAISS
-- Microsoft Agent Framework (MAF) 1.7.0
+- Microsoft Agent Framework (MAF) 1.8.0
 - NETCONF-capable network device
 - JupyterHub (optional)
 
