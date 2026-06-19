@@ -61,7 +61,7 @@ if not GROQ_API_KEY:
     GROQ_API_KEY = os.getenv('GROQ_API_KEY', '')
 
 GROQ_BASE_URL  = "https://api.groq.com/openai/v1"
-DEFAULT_MODEL  = "llama-3.3-70b-versatile"
+DEFAULT_MODEL  = "openai/gpt-oss-120b"
 
 # Load embeddings & vector store
 embedding  = HuggingFaceEmbeddings(model_name="BAAI/bge-large-en-v1.5")
@@ -1234,7 +1234,7 @@ User Query (EN/JP)
             deploy_toggle      = ui.switch('Deploy to Device', value=True)
             orchestrator_toggle = ui.switch('Use Orchestrator (multi-task)', value=True)
             max_retries_input  = ui.number('Max Retries', value=3, min=1, max=10).props('outlined dense')
-            ui.label('Groq Model: llama-3.3-70b-versatile').classes('text-caption text-grey-6 q-mt-sm')
+            ui.label('Groq Model: openai/gpt-oss-120b').classes('text-caption text-grey-6 q-mt-sm')
 
     ui.separator()
 
