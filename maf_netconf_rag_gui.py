@@ -60,8 +60,8 @@ for path in config_paths:
 if not GROQ_API_KEY:
     GROQ_API_KEY = os.getenv('GROQ_API_KEY', '')
 
-GROQ_BASE_URL  = "https://api.groq.com/openai/v1"
-DEFAULT_MODEL  = "openai/gpt-oss-120b"
+GROQ_BASE_URL  = config.get('GROQ', 'GROQ_BASE_URL',  fallback='https://api.groq.com/openai/v1')
+DEFAULT_MODEL  = config.get('GROQ', 'GROQ_MODEL',     fallback='openai/gpt-oss-120b')
 
 # Load embeddings & vector store
 embedding  = HuggingFaceEmbeddings(model_name="BAAI/bge-large-en-v1.5")
